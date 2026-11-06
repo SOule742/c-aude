@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<defs>
+ <filter id="paper"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="4"/><feColorMatrix values="0 0 0 0 0.45 0 0 0 0 0.38 0 0 0 0 0.3 0 0 0 0.10 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+ <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="5"/></filter>
+ <filter id="rough2"><feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="21"/><feDisplacementMap in="SourceGraphic" scale="7"/></filter>
+ <pattern id="hatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line x1="0" y1="0" x2="0" y2="9" stroke="#2a2422" stroke-width="1.6" opacity=".55"/></pattern>
+</defs>
+<rect width="1200" height="900" fill="#efe6d6"/>
+<rect width="1200" height="900" fill="#fff" filter="url(#paper)"/>
+<!-- background washes -->
+<g filter="url(#rough2)" opacity=".75">
+ <rect x="860" y="40" width="300" height="420" fill="#d9b38a"/>
+ <rect x="1040" y="90" width="80" height="110" fill="#c9cfc9"/>
+ <path d="M60 690 Q600 650 1160 700 L1160 760 Q600 720 60 760Z" fill="#d8cbb6"/>
+ <path d="M980 520 L1170 520 L1170 560 L990 560Z" fill="#d49a86" opacity=".7"/>
+</g>
+<g filter="url(#rough)" stroke="#221d1b" stroke-linecap="round" stroke-linejoin="round" fill="none">
+ <!-- rear wheel -->
+ <circle cx="320" cy="590" r="135" fill="#2c2725" stroke-width="5"/>
+ <circle cx="320" cy="590" r="98" fill="#4a4340" stroke-width="3"/>
+ <circle cx="320" cy="590" r="68" fill="#b9b2a7" stroke-width="2.5"/>
+ <path d="M320 590 L320 500 M320 590 L400 630 M320 590 L250 640 M320 590 L395 540 M320 590 L240 545" stroke-width="7"/>
+ <!-- front wheel -->
+ <circle cx="925" cy="610" r="148" fill="#2c2725" stroke-width="5"/>
+ <circle cx="925" cy="610" r="108" fill="#4a4340" stroke-width="3"/>
+ <circle cx="925" cy="610" r="80" fill="#c8c1b5" stroke-width="2.5"/>
+ <circle cx="925" cy="610" r="55" fill="none" stroke-width="2" stroke-dasharray="3 7"/>
+ <path d="M925 610 L925 505 M925 610 L1020 650 M925 610 L855 690 M925 610 L1010 550 M925 610 L840 560" stroke-width="7"/>
+ <text x="0" y="0" transform="translate(1010 690) rotate(-60)" font-family="Arial" font-size="18" fill="#e9e1d2" stroke="none">DIABLO ROSSO IV</text>
+ <!-- fork -->
+ <path d="M820 330 L905 600" stroke-width="22" stroke="#221d1b"/>
+ <path d="M820 330 L870 500" stroke-width="7" stroke="#d6d0c6"/>
+ <!-- swingarm -->
+ <path d="M320 590 L520 470 L560 500 L340 610Z" fill="#3a3432" stroke-width="3.5"/>
+ <!-- belly & engine -->
+ <path d="M500 420 Q560 380 650 400 L760 430 L790 540 Q720 600 600 590 L520 540Z" fill="#3f3936" stroke-width="4"/>
+ <path d="M540 450 L740 460 L760 540 L560 560Z" fill="url(#hatch)" stroke-width="2"/>
+ <circle cx="610" cy="500" r="30" fill="#2a2523" stroke-width="3"/>
+ <!-- fairing body -->
+ <path d="M460 330 Q520 300 640 290 L760 230 Q860 190 960 240 L1010 290 Q960 340 880 360 L830 470 Q780 560 640 560 Q700 470 660 410 Q560 410 470 400Z" fill="#2e2927" stroke-width="5"/>
+ <path d="M640 300 Q720 260 780 270 Q760 330 700 370" fill="none" stroke="#8a827a" stroke-width="3"/>
+ <path d="M660 540 Q760 520 820 470" stroke="#b9b2a7" stroke-width="4"/>
+ <!-- windscreen -->
+ <path d="M820 230 Q900 160 975 190 L1000 285 Q930 250 860 260Z" fill="#5c5551" stroke-width="3.5"/>
+ <!-- headlight -->
+ <path d="M940 300 L1000 295 L985 325 Z" fill="#e8dfcd" stroke-width="2.5"/>
+ <!-- tank -->
+ <path d="M530 300 Q580 230 680 235 Q740 250 760 290 L640 310Z" fill="#26211f" stroke-width="4"/>
+ <path d="M580 270 Q640 245 700 255" stroke="#efe6d6" stroke-width="4" opacity=".8"/>
+ <!-- seat & tail -->
+ <path d="M300 250 L340 230 Q420 260 540 300 L530 330 Q420 320 330 290Z" fill="#3a3432" stroke-width="4"/>
+ <path d="M300 250 L250 270 L260 300 L330 290" fill="#2a2523" stroke-width="3.5"/>
+ <path d="M340 320 L460 330 L490 420 L400 400Z" fill="url(#hatch)" stroke-width="3"/>
+ <!-- bars -->
+ <path d="M730 270 L860 245 M720 280 L700 300" stroke-width="7"/>
+ <!-- exhaust -->
+ <path d="M400 560 L345 500 Q330 480 350 470 L410 520 L520 560" fill="#3a3432" stroke-width="5"/>
+ <path d="M360 485 L420 545 L520 565" stroke="#c9a46a" stroke-width="11"/>
+ <path d="M347 478 L380 470 L405 495" stroke="#c45a4a" stroke-width="5"/>
+ <!-- quick strokes for motion/folds -->
+ <path d="M140 760 L300 752 M820 780 L1080 770 M200 772 L360 768" stroke-width="2.5" opacity=".6"/>
+</g>
+<g filter="url(#rough)" font-family="Georgia, serif" font-style="italic" fill="#efe6d6">
+ <text x="720" y="400" font-size="48" font-weight="bold" transform="rotate(-8 720 400)">ZX-6R</text>
+ <text x="650" y="545" font-size="26" fill="#d8d0c2">kawasaki</text>
+</g>
+<text x="70" y="110" font-family="Georgia, serif" font-style="italic" font-size="44" fill="#4a3f38">Ninja ZX-6R</text>
+<text x="72" y="145" font-family="Georgia, serif" font-size="18" letter-spacing="4" fill="#8a7a6c">MIDNIGHT EDITION — SKETCHBOOK</text>
+</svg>
